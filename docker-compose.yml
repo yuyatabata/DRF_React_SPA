@@ -1,4 +1,5 @@
 version: "3"
+
 services:
   db:
     container_name: django_db
@@ -28,6 +29,6 @@ services:
     ports:
       - 3000:3000
     depends_on:
-      - rest-api
-  volumes:
-    django_data_volume: 
+      - rest_api
+volumes:
+  django_data_volume:
